@@ -1,0 +1,25 @@
+body {
+  background-color: hotpink;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  color: violet;
+  font-size: 40px;
+  text-shadow: 0 0 8px #ff00ff, 0 0 16px #ff99ff;
+}
+
+h2 {
+  color: hotpink;
+  font-size: 28px;
+  text-shadow: 0 0 5px #ff69b4, 0 0 10px #ffccff;
+  margin-top: 10px;
+}
+
+p {
+  color: #333;
+  font-size: 18px;
+  margin-top: 20px;
+}
