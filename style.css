@@ -1,25 +1,43 @@
+/* Portfolio Styling with Background Image Only */
+
 body {
-  background-color: hotpink;
+  margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
+  background-image: url('background.jpg');  /* Upload this image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+.container {
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
   padding: 50px;
+  max-width: 800px;
+  margin: 80px auto;
+  border-radius: 12px;
 }
 
 h1 {
-  color: violet;
   font-size: 40px;
-  text-shadow: 0 0 8px #ff00ff, 0 0 16px #ff99ff;
+  color: #ffe6ff;
+  text-shadow: 0 0 8px #ff99ff;
+  margin-bottom: 10px;
 }
 
 h2 {
-  color: hotpink;
-  font-size: 28px;
-  text-shadow: 0 0 5px #ff69b4, 0 0 10px #ffccff;
-  margin-top: 10px;
+  font-size: 24px;
+  color: #ffd1dc;
+  text-shadow: 0 0 5px #ffb6c1;
+  margin-top: 0;
 }
 
 p {
-  color: #333;
   font-size: 18px;
   margin-top: 20px;
+  line-height: 1.6;
+  color: #f3f3f3;
 }
