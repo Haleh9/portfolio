@@ -1,43 +1,74 @@
-/* Portfolio Styling with Background Image Only */
+/* Futuristic Violet-Themed CSS */
 
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-image: url('background.jpg');  /* Upload this image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: white;
+  font-family: 'DM Sans', sans-serif;
+  background: radial-gradient(circle at center, #1a002e, #000);
+  color: #e8d9ff;
+  overflow-x: hidden;
 }
 
 .container {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
-  padding: 50px;
-  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 60px 40px;
+  max-width: 900px;
   margin: 80px auto;
-  border-radius: 12px;
+  border-radius: 16px;
+  box-shadow: 0 0 40px rgba(200, 0, 255, 0.4);
+  border: 2px solid rgba(200, 0, 255, 0.2);
 }
 
 h1 {
-  font-size: 40px;
-  color: #ffe6ff;
-  text-shadow: 0 0 8px #ff99ff;
-  margin-bottom: 10px;
+  font-size: 42px;
+  color: #d17dff;
+  text-shadow: 0 0 10px #ff99ff, 0 0 20px #a64fff;
+  margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 24px;
-  color: #ffd1dc;
-  text-shadow: 0 0 5px #ffb6c1;
+  font-size: 26px;
+  color: #c9a7ff;
+  text-shadow: 0 0 8px #bb33ff;
   margin-top: 0;
 }
 
-p {
-  font-size: 18px;
+.highlighted {
+  font-weight: bold;
+  background-color: rgba(150, 0, 255, 0.1);
+  padding: 12px;
+  border-left: 5px solid #9e00ff;
   margin-top: 20px;
-  line-height: 1.6;
-  color: #f3f3f3;
+  color: #e3c6ff;
+  box-shadow: 0 0 12px #cc66ff;
+  border-radius: 8px;
+}
+
+.cube {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #b300ff, #6e00a8);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #d94fff, 0 0 30px #ff99ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cube:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #ffccff, 0 0 40px #cc66ff;
+}
+
+.cube-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+  flex-wrap: wrap;
 }
