@@ -1,4 +1,4 @@
-/* Futuristic Violet-Themed CSS */
+/* Futuristic CSS with Flexbox Enhancements */
 
 body {
   margin: 0;
@@ -45,18 +45,24 @@ h2 {
   border-radius: 8px;
 }
 
+.cube-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 60px;
+}
+
 .cube {
   width: 100px;
   height: 100px;
   background: linear-gradient(135deg, #b300ff, #6e00a8);
-  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #d94fff, 0 0 30px #ff99ff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 32px;
-  font-weight: bold;
-  border-radius: 12px;
-  box-shadow: 0 0 20px #d94fff, 0 0 30px #ff99ff;
+  animation: pulse 2s infinite ease-in-out;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -65,10 +71,36 @@ h2 {
   box-shadow: 0 0 30px #ffccff, 0 0 40px #cc66ff;
 }
 
-.cube-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 60px;
-  flex-wrap: wrap;
+.shape {
+  width: 50px;
+  height: 50px;
+}
+
+.circle {
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 10px #ff99ff;
+}
+
+.square {
+  background: #fff;
+  box-shadow: 0 0 10px #cc66ff;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #fff;
+  box-shadow: 0 0 10px #bb33ff;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
