@@ -3,14 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Haleh's Portfolio</title>
+  <title>Haleh's Architecture-Inspired Portfolio</title>
+  <!-- Google Fonts: Inspired by architectural websites -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .cube-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .cube {
+      width: 100px;
+      height: 100px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 2px solid #444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: bold;
+      color: #222;
+      box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to My Portfolio</h1>
-    <h2>Art + Design</h2>
-    <p>This is my first CSS-styled website showcasing my creative work and digital journey.</p>
+    <h1 class="highlighted">Welcome to My Portfolio</h1>
+    <h2>Art + Architecture + Design</h2>
+    <p class="highlighted">This site is inspired by top architecture portfolios — clean, modern, and minimal.</p>
+
+    <div class="cube-container">
+      <div class="cube">1</div>
+      <div class="cube">2</div>
+      <div class="cube">3</div>
+    </div>
   </div>
 </body>
 </html>
